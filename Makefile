@@ -13,6 +13,11 @@ brain-games:
 brain-even:
 	node bin/brain-even.js
 
+.PHONY: brain-calc
+
+brain-calc:
+	node bin/brain-calc.js
+
 .PHONY: publish
 
 publish:
