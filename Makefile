@@ -23,6 +23,11 @@ brain-calc:
 brain-gcd:
 	node bin/brain-gcd.js
 
+.PHONY: brain-progression
+
+brain-progression:
+	node bin/brain-progression.js
+
 .PHONY: publish
 
 publish:
