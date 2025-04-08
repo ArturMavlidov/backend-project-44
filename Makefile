@@ -28,6 +28,11 @@ brain-gcd:
 brain-progression:
 	node bin/brain-progression.js
 
+.PHONY: brain-prime
+
+brain-prime:
+	node bin/brain-prime.js
+
 .PHONY: publish
 
 publish:
