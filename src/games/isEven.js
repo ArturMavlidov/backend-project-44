@@ -1,4 +1,4 @@
-import { hostGame } from "../helpers/index.js";
+import { hostGame } from '../helpers/index.js';
 
 export const isEvenGame = (name) => {
   hostGame({
@@ -8,9 +8,11 @@ export const isEvenGame = (name) => {
       const randomNumber = getRandomNumber(1, 100);
       const isNumberEven = randomNumber % 2 === 0;
 
-      const rightAnswer = isNumberEven ? "yes" : "no";
+      const rightAnswer = isNumberEven ? 'yes' : 'no';
 
       return { rightAnswer, question: randomNumber };
     },
   });
 };
+
+export default isEvenGame;

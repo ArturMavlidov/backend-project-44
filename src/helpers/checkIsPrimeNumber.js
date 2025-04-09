@@ -3,7 +3,7 @@ export const checkIsPrimeNumber = (number) => {
     return false;
   }
 
-  for (let i = number - 1; i > 0; i--) {
+  for (let i = number - 1; i > 0; i -= 1) {
     if (number % i === 0 && i !== 1) {
       return false;
     }
@@ -11,3 +11,5 @@ export const checkIsPrimeNumber = (number) => {
 
   return true;
 };
+
+export default checkIsPrimeNumber;

@@ -10,9 +10,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "import/extensions": "off",
     "no-console": "off",
-    "import/prefer-default-export": "off",
-    quotes: ["error", "double", { avoidEscape: true }],
+    "import/extensions": "off",
   },
 };

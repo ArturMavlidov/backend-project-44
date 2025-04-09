@@ -1,5 +1,5 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-export const input = (text) => {
-  return readlineSync.question(`${text} `);
-};
+export const input = (text) => readlineSync.question(`${text} `);
+
+export default input;
