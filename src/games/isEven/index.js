@@ -1,9 +1,8 @@
-import { hostGame } from '../helpers/index.js';
+import { hostGame } from '../../helpers/index.js';
 
-export const isEvenGame = (name) => {
+export const isEvenGame = () => {
   hostGame({
-    name,
-    text: 'Answer "yes" if the number is even, otherwise answer "no".',
+    description: 'Answer "yes" if the number is even, otherwise answer "no".',
     getQuestionData: (getRandomNumber) => {
       const randomNumber = getRandomNumber(1, 100);
       const isNumberEven = randomNumber % 2 === 0;

@@ -1,9 +1,9 @@
-import { findGcd, hostGame } from '../helpers/index.js';
+import { hostGame } from '../../helpers/index.js';
+import { findGcd } from './helpers.js';
 
-export const gcdGame = (name) => {
+export const gcdGame = () => {
   hostGame({
-    name,
-    text: 'Find the greatest common divisor of given numbers.',
+    description: 'Find the greatest common divisor of given numbers.',
     getQuestionData: (getRandomNumber) => {
       const firstNumber = getRandomNumber();
       const secondNumber = getRandomNumber();
